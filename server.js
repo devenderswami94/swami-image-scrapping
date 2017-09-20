@@ -224,7 +224,7 @@ app.post('https://afternoon-depths-19370.herokuapp.com/image', function (request
     next();
  });*/
 
-app.get('/', function (req, res,next) {
+app.get('https://afternoon-depths-19370.herokuapp.com/', function (req, res,next) {
     res.sendFile('index.html');
 });
 
