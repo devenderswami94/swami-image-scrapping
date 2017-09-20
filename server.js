@@ -32,7 +32,7 @@ var A = mongoose.model('A', schema);
 var a =new A;
 
 
-var server = app.listen('https://git.heroku.com/afternoon-depths-19370.git', function () {
+var server = app.listen(8088, function () {
     console.log('Node server is running..');
 });
 
