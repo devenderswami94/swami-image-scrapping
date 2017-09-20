@@ -36,7 +36,7 @@ var server = app.listen(8088, function () {
     console.log('Node server is running..');
 });
 
-app.post('/image', function (request, response) {
+app.post('https://afternoon-depths-19370.herokuapp.com/image', function (request, response) {
     // response.set("Access-Control-Allow-Origin", "*");
     // response.set("Access-Control-Allow-Headers", "X-Requested-With");
     name = request.body.IMAGENAME;
@@ -229,7 +229,7 @@ app.get('/', function (req, res,next) {
 });
 
 
-/*app.get('/home', function (req, res,next) {
+/*app.get('https://afternoon-depths-19370.herokuapp.com/home', function (req, res,next) {
     res.sendFile(path.join(__dirname,  'view/home.html'));
 });*/
 
