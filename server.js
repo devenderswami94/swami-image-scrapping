@@ -32,11 +32,11 @@ var A = mongoose.model('A', schema);
 var a =new A;
 
 
-var server = app.listen(8088, function () {
+var server = app.listen('https://git.heroku.com/afternoon-depths-19370.git', function () {
     console.log('Node server is running..');
 });
 
-app.post('https://afternoon-depths-19370.herokuapp.com/image', function (request, response) {
+app.post('/image', function (request, response) {
     // response.set("Access-Control-Allow-Origin", "*");
     // response.set("Access-Control-Allow-Headers", "X-Requested-With");
     name = request.body.IMAGENAME;
@@ -224,7 +224,7 @@ app.post('https://afternoon-depths-19370.herokuapp.com/image', function (request
     next();
  });*/
 
-app.get('https://afternoon-depths-19370.herokuapp.com/', function (req, res,next) {
+app.get('/', function (req, res,next) {
     res.sendFile('index.html');
 });
 
