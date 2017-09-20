@@ -36,7 +36,7 @@ var server = app.listen(8088, function () {
     console.log('Node server is running..');
 });
 
-app.post('/image', function (request, response) {
+app.post(' https://swami-image-scrapping.herokuapp.com/image', function (request, response) {
     // response.set("Access-Control-Allow-Origin", "*");
     // response.set("Access-Control-Allow-Headers", "X-Requested-With");
     name = request.body.IMAGENAME;
