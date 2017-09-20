@@ -229,7 +229,7 @@ app.get('/', function (req, res,next) {
 });
 
 
-/*app.get('/home', function (req, res,next) {
+/*app.get('https://afternoon-depths-19370.herokuapp.com/home', function (req, res,next) {
     res.sendFile(path.join(__dirname,  'view/home.html'));
 });*/
 
